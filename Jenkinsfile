@@ -11,7 +11,10 @@ ls'''
         }
         stage('Directory') {
           steps {
-            sh 'cd Java'
+            sh '''cd Java
+'''
+            sh 'ls'
+            sh 'javac Hello.java'
           }
         }
       }
