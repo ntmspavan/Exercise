@@ -15,7 +15,7 @@ ls'''
 cd Java
 pwd
 ls'''
-            sh '''echo "${BRANCH_NAME}|awk -F \'/\' \'{print $2}\'"
+            sh '''echo "${BRANCH_NAME}"
 '''
           }
         }
