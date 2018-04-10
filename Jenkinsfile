@@ -12,8 +12,7 @@ ls'''
         stage('Directory') {
           steps {
             sh '''cd Java
-ls
-javac Hello.java'''
+ls'''
             sh '''echo "${BRANCH_NAME}|awk -F \'/\' \'{print $2}\'"
 '''
           }
