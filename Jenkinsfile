@@ -2,9 +2,18 @@ pipeline {
   agent any
   stages {
     stage('Checkout') {
-      steps {
-        sh '''pwd
+      parallel {
+        stage('Checkout') {
+          steps {
+            sh '''pwd
 ls'''
+          }
+        }
+        stage('Directory') {
+          steps {
+            sh 'cd Java'
+          }
+        }
       }
     }
     stage('Done') {
