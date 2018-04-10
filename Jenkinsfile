@@ -11,7 +11,9 @@ ls'''
         }
         stage('Directory') {
           steps {
-            sh '''cd Java
+            sh '''----This is for changing Directory---
+cd Java
+
 ls'''
             sh '''echo "${BRANCH_NAME}|awk -F \'/\' \'{print $2}\'"
 '''
