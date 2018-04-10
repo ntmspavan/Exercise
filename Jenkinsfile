@@ -13,6 +13,8 @@ ls'''
           steps {
             sh '''cd Java
 ls'''
+            sh '''BNAME=`echo ${BRANCH_NAME} | awk -F \'/\' \'{print $2}\'`
+echo "${BNAME}"'''
           }
         }
       }
