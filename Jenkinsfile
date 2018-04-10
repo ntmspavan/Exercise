@@ -13,7 +13,7 @@ ls'''
           steps {
             sh '''cd Java
 ls'''
-            sh '''def branch = "echo ${BRANCH_NAME}"
+            sh '''branch = ${BRANCH_NAME}"
 echo "${branch}"'''
           }
         }
