@@ -3,17 +3,8 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        sh 'cd java'
-      }
-    }
-    stage('Build') {
-      steps {
-        sh 'javac Hello.java'
-      }
-    }
-    stage('Compile') {
-      steps {
-        sh 'java Hello'
+        sh '''pwd
+ls'''
       }
     }
     stage('Done') {
